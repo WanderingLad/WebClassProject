@@ -2,29 +2,16 @@ async function parseProducts() {
     const response = await fetch("./products.json");
     const products = await response.json();
 
-    products.users.forEach(function (data) {
-        //Site Tab
+    products.product.forEach(function (data) {
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.href = "./product.html";
         a.onclick = function () {
-            localStorage.setItem("site", data.site);
-            localStorage.setItem("user", data.user);
+            localStorage.setItem("name", data.name);
+            localStorage.setItem("price", data.price);
+            localStorage.setItem("img", data.images[0]);
         };
-        a.innerHTML = data.site;
-        li.appendChild(a);
-        document.getElementById("paginated-list").appendChild(li);
-
-
-        //User Tab
-        var li = document.createElement("li");
-        var a = document.createElement("a");
-        a.href = "./product.html";
-        a.onclick = function () {
-            localStorage.setItem("site", data.site);
-            localStorage.setItem("user", data.user);
-        };
-        a.innerHTML = data.user;
+        a.innerHTML = data.name;
         li.appendChild(a);
         document.getElementById("paginated-list").appendChild(li);
     });
