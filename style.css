@@ -1,0 +1,9 @@
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

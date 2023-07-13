@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "site": "Site1",
+            "user": "User1"
+        },
+        {
+            "site": "Site2",
+            "user": "User2"
+        },
+        {
+            "site": "Site3",
+            "user": "User3"
+        },
+        {
+            "site": "Site4",
+            "user": "User4"
+        },
+        {
+            "site": "Site5",
+            "user": "User5"
+        },
+        {
+            "site": "Site6",
+            "user": "User6"
+        },
+        {
+            "site": "Site7",
+            "user": "User7"
+        },
+        {
+            "site": "Site8",
+            "user": "User8"
+        },
+        {
+            "site": "Site9",
+            "user": "User9"
+        },
+        {
+            "site": "Site10",
+            "user": "User10"
+        }
+    ]
+}
