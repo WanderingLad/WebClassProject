@@ -1,44 +1,34 @@
 {
-    "products": [
+    "product": [
         {
-            "site": "Site1",
-            "user": "User1"
+            "name": "Logitech MX Master 3",
+            "price": 100,
+            "category": "mouse",
+            "images": [
+                "./images/LMXMaster31.jpg",
+                "./images/LMXMaster32.jpg",
+                "./images/LMXMaster33.jpg"
+            ]
         },
         {
-            "site": "Site2",
-            "user": "User2"
+            "name": "Manhattan Wired Keyboard",
+            "price": 300,
+            "category": "keyboard",
+            "images": [
+                "./images/MANKEY1.jpg",
+                "./images/MANKEY2.jpg",
+                "./images/MANKEY3.jpg"
+            ]
         },
         {
-            "site": "Site3",
-            "user": "User3"
-        },
-        {
-            "site": "Site4",
-            "user": "User4"
-        },
-        {
-            "site": "Site5",
-            "user": "User5"
-        },
-        {
-            "site": "Site6",
-            "user": "User6"
-        },
-        {
-            "site": "Site7",
-            "user": "User7"
-        },
-        {
-            "site": "Site8",
-            "user": "User8"
-        },
-        {
-            "site": "Site9",
-            "user": "User9"
-        },
-        {
-            "site": "Site10",
-            "user": "User10"
+            "name": "Fractal Design North",
+            "price": 500,
+            "category": "desktop",
+            "images": [
+                "./images/FDN1.jpg",
+                "./images/FDN1.jpg",
+                "./images/FDN1.jpg"
+            ]
         }
     ]
 }

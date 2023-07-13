@@ -2,16 +2,22 @@ async function loadProduct() {
     const response = await fetch("./products.json");
     const products = await response.json();
 
-    products.users.forEach(function (data) {
-        if(data.site === localStorage.getItem("site")){
-            var siteHTML = document.createElement("h2");
-            var userHTML = document.createElement("h3");
-            var site = localStorage.getItem("site");
-            var user = localStorage.getItem("user");
-            siteHTML.innerHTML = site;
-            userHTML.innerHTML = user;
-            document.getElementById("product").appendChild(siteHTML);
-            document.getElementById("product").appendChild(userHTML);
+    products.product.forEach(function (data) {
+        if(data.name === localStorage.getItem("name")){
+            var nameHTML = document.createElement("h2");
+            var priceHTML = document.createElement("p");
+            var imgHTML = document.createElement("img");
+            var name = localStorage.getItem("name");
+            var price = localStorage.getItem("price");
+            var img = localStorage.getItem("img");
+            nameHTML.innerHTML = name;
+            priceHTML.innerHTML = price;
+            imgHTML.src = img;
+            imgHTML.width = 100;
+            imgHTML.height = 100;
+            document.getElementById("product").appendChild(nameHTML);
+            document.getElementById("product").appendChild(priceHTML);
+            document.getElementById("product").appendChild(imgHTML);
         }
     });
 }
