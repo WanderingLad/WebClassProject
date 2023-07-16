@@ -7,3 +7,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.slides-image-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
