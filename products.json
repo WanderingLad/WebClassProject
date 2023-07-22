@@ -1,93 +1,86 @@
-{"product": [
+{
+  "product": [
     {
-        "name": "Logitech MX Master 3",
-        "price": 100,
-        "category": "mouse",
-        "images": [
-            "./images/LMXMaster31.jpg",
-            "./images/LMXMaster32.jpg",
-            "./images/LMXMaster33.jpg"
-        ]
+      "name": "Logitech MX Master 3",
+      "price": 100,
+      "category": "mouse",
+      "images": [
+        "./images/LMXMaster31.jpg",
+        "./images/LMXMaster32.jpg",
+        "./images/LMXMaster33.jpg"
+      ]
     },
     {
-        "name": "Microsoft Surface Arch Mouse",
-        "price": 100,
-        "category": "mouse",
-        "images": [
-            "./images/MArch1.jpg",
-            "./images/MArch2.jpg",
-            "./images/MArch3.jpg"
-        ]
+      "name": "Microsoft Surface Arch Mouse",
+      "price": 100,
+      "category": "mouse",
+      "images": [
+        "./images/MArch1.jpg",
+        "./images/MArch2.jpg",
+        "./images/MArch3.jpg"
+      ]
     },
     {
-        "name": "Razer Basalisk Version 3",
-        "price": 100,
-        "category": "mouse",
-        "images": [
-            "./images/Rbas1.jpg",
-            "./images/RBas2.jpg",
-            "./images/RBas3.jpg"
-        ]
+      "name": "Razer Basalisk Version 3",
+      "price": 100,
+      "category": "mouse",
+      "images": [
+        "./images/Rbas1.jpg",
+        "./images/RBas2.jpg",
+        "./images/RBas3.jpg"
+      ]
     },
     {
-        "name": "Manhattan Wired Keyboard",
-        "price": 300,
-        "category": "keyboard",
-        "images": [
-            "./images/MANKEY1.jpg",
-            "./images/MANKEY2.jpg",
-            "./images/MANKEY3.jpg"
-        ]
+      "name": "Manhattan Wired Keyboard",
+      "price": 300,
+      "category": "keyboard",
+      "images": [
+        "./images/MANKEY1.jpg",
+        "./images/MANKEY2.jpg",
+        "./images/MANKEY3.jpg"
+      ]
     },
     {
-        "name": "Microsoft Ergonomic Keyboard",
-        "price": 100,
-        "category": "keyboard",
-        "images": [
-            "./images/MErgKey1.jpg",
-            "./images/MErgKey2.jpg",
-            "./images/MErgKey3.jpg"
-        ]
+      "name": "Microsoft Ergonomic Keyboard",
+      "price": 100,
+      "category": "keyboard",
+      "images": [
+        "./images/MErgKey1.jpg",
+        "./images/MErgKey2.jpg",
+        "./images/MErgKey3.jpg"
+      ]
     },
     {
-        "name": "Razer Huntsman Keyboard",
-        "price": 100,
-        "category": "keyboard",
-        "images": [
-            "./images/RHUNTKEY1.jpg",
-            "./images/RHUNTKEY2.jpg",
-            "./images/RHUNTKEY3.jpg"
-        ]
+      "name": "Razer Huntsman Keyboard",
+      "price": 100,
+      "category": "keyboard",
+      "images": [
+        "./images/RHUNTKEY1.jpg",
+        "./images/RHUNTKEY2.jpg",
+        "./images/RHUNTKEY3.jpg"
+      ]
     },
     {
-        "name": "Fractal Design North",
-        "price": 500,
-        "category": "desktop",
-        "images": [
-            "./images/FDN1.jpg",
-            "./images/FDN2.jpg",
-            "./images/FDN3.jpg"
-        ]
+      "name": "Fractal Design North",
+      "price": 500,
+      "category": "desktop",
+      "images": ["./images/FDN1.jpg", "./images/FDN2.jpg", "./images/FDN3.jpg"]
     },
     {
-        "name": "Liam-Le O11",
-        "price": 500,
-        "category": "desktop",
-        "images": [
-            "./images/LLO1.jpg",
-            "./images/LLO2.jpg",
-            "./images/LLO3.jpg"
-        ]
+      "name": "Liam-Le O11",
+      "price": 500,
+      "category": "desktop",
+      "images": ["./images/LLO1.jpg", "./images/LLO2.jpg", "./images/LLO3.jpg"]
     },
     {
-        "name": "Phanteks Eclipse G500A",
-        "price": 500,
-        "category": "desktop",
-        "images": [
-            "./images/PEG500A1.jpg",
-            "./images/PEG500A2.jpg",
-            "./images/PEG500A3.jpg"
-        ]
-    }  
-]
+      "name": "Phanteks Eclipse G500A",
+      "price": 500,
+      "category": "desktop",
+      "images": [
+        "./images/PEG500A1.jpg",
+        "./images/PEG500A2.jpg",
+        "./images/PEG500A3.jpg"
+      ]
+    }
+  ]
 }
