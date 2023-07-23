@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<meta charset=" utf-8">
-<title>Webstore</title>
-<html>
-    
-<header>
-    <h1>Test Product Page</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  </head>
+<header class="header">
+    <a href="index.html">
+        <img src="images/logo.png" class="logo" alt="Royal Tech Logo" />
+    </a>
+    <nav>
+      <ol class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about.html">About</a></li?>
+      </ol>
+    </nav>
+    <a href="#" class="cta"><button>Cart</button></a>
 </header>
 
-<body onload="loadProduct()">
+  <body onload="loadProduct()">
     <div id="product" data-name=""></div>
     <script src="product.js"></script>
-</body>
-
+  </body>
 </html>
