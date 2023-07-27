@@ -1,3 +1,11 @@
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuContainer = document.querySelector('.menu-container');
+
+hamburgerMenu.addEventListener('click', function () {
+    menuContainer.classList.toggle('show');
+});
+
+
 async function parseProducts() {
   const response = await fetch("./products.json");
   const products = await response.json();
