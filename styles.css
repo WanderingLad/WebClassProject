@@ -89,6 +89,7 @@ button:hover {
 
 .cta {
   background-color: lightblue;
+  border-radius: 50px;
 }
 
 .nav_links {
