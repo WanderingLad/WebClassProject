@@ -3,7 +3,7 @@
     {
       "name": "Logitech MX Master 3",
       "price": 100,
-      "category": "mouse",
+      "category": "Mice",
       "images": [
         "./images/LMXMaster31.jpg",
         "./images/LMXMaster32.jpg",
@@ -13,7 +13,7 @@
     {
       "name": "Microsoft Surface Arch Mouse",
       "price": 100,
-      "category": "mouse",
+      "category": "Mice",
       "images": [
         "./images/MArch1.jpg",
         "./images/MArch2.jpg",
@@ -23,7 +23,7 @@
     {
       "name": "Razer Basalisk Version 3",
       "price": 100,
-      "category": "mouse",
+      "category": "Mice",
       "images": [
         "./images/Rbas1.jpg",
         "./images/RBas2.jpg",
@@ -33,7 +33,7 @@
     {
       "name": "Manhattan Wired Keyboard",
       "price": 300,
-      "category": "keyboard",
+      "category": "Keyboards",
       "images": [
         "./images/MANKEY1.jpg",
         "./images/MANKEY2.jpg",
@@ -43,7 +43,7 @@
     {
       "name": "Microsoft Ergonomic Keyboard",
       "price": 100,
-      "category": "keyboard",
+      "category": "Keyboards",
       "images": [
         "./images/MErgKey1.jpg",
         "./images/MErgKey2.jpg",
@@ -53,7 +53,7 @@
     {
       "name": "Razer Huntsman Keyboard",
       "price": 100,
-      "category": "keyboard",
+      "category": "Keyboards",
       "images": [
         "./images/RHUNTKEY1.jpg",
         "./images/RHUNTKEY2.jpg",
@@ -63,23 +63,199 @@
     {
       "name": "Fractal Design North",
       "price": 500,
-      "category": "desktop",
-      "images": ["./images/FDN1.jpg", "./images/FDN2.jpg", "./images/FDN3.jpg"]
+      "category": "Cases",
+      "images": [
+        "./images/FDN1.jpg",
+        "./images/FDN2.jpg",
+        "./images/FDN3.jpg"
+      ]
     },
     {
       "name": "Liam-Le O11",
       "price": 500,
-      "category": "desktop",
-      "images": ["./images/LLO1.jpg", "./images/LLO2.jpg", "./images/LLO3.jpg"]
+      "category": "Cases",
+      "images": [
+        "./images/LLO1.jpg",
+        "./images/LLO2.jpg",
+        "./images/LLO3.jpg"
+      ]
     },
     {
       "name": "Phanteks Eclipse G500A",
       "price": 500,
-      "category": "desktop",
+      "category": "Cases",
       "images": [
         "./images/PEG500A1.jpg",
         "./images/PEG500A2.jpg",
         "./images/PEG500A3.jpg"
+      ]
+    },
+    {
+      "name": "Black Lighting Cables Eclipse G500A",
+      "price": 500,
+      "category": "Cables",
+      "images": [
+        "./images/Black_Lightning_cable.jpg"
+      ]
+    },
+    {
+      "name": "Black PC Cables",
+      "price": 500,
+      "category": "Cables",
+      "images": [
+        "./images/Black_Pc_cables.jpg"
+      ]
+    },
+    {
+      "name": "Black Blue Grey PC Cables",
+      "price": 500,
+      "category": "Cables",
+      "images": [
+        "./images/Blackbluegrey_Cables.jpg"
+      ]
+    },
+    {
+      "name": "Wave Desk mat",
+      "price": 500,
+      "category": "Desk Mats",
+      "images": [
+        "./images/Desk_mat_wave_blue.jpg"
+      ]
+    },
+    {
+      "name": "RGB Desk Mat",
+      "price": 500,
+      "category": "Desk Mats",
+      "images": [
+        "./images/Desk_Mat_blue_rgb.jpg"
+      ]
+    },
+    {
+      "name": "Windows 10 Home",
+      "price": 500,
+      "category": "Software",
+      "images": [
+        "./images/Windows 10 Home.png"
+      ]
+    },
+    {
+      "name": "Windows 10 Pro",
+      "price": 500,
+      "category": "Software",
+      "images": [
+        "./images/Windows 10 Pro.png"
+      ]
+    },
+    {
+      "name": "Microsoft Office 2021 Pro",
+      "price": 500,
+      "category": "Software",
+      "images": [
+        "./images/Microsoft Office 2021 Professional Plus.jpg"
+      ]
+    },
+    {
+      "name": "Norton Antivirus Plus",
+      "price": 500,
+      "category": "Software",
+      "images": [
+        "./images/Norton AntiVirus Plus.jpg"
+      ]
+    },
+    {
+      "name": "FL Studio Producer Edition",
+      "price": 500,
+      "category": "Software",
+      "images": [
+        "./images/FL Studio Producer Edition.png"
+      ]
+    },
+    {
+      "name": "Hyper X QuadCast USB Mic",
+      "price": 500,
+      "category": "Microphones",
+      "images": [
+        "./images/Hyper X QuadCast USB Mic.jpg"
+      ]
+    },
+    {
+      "name": "Razer Seiren Mini Microphone",
+      "price": 500,
+      "category": "Microphones",
+      "images": [
+        "./images/Razer Seiren mini Microphone.png"
+      ]
+    },
+    {
+      "name": "Warm Audio WA8000 Large Condenser Microphone",
+      "price": 500,
+      "category": "Microphones",
+      "images": [
+        "./images/Warm Audio WA-8000 Large Condenser Mic.jpg"
+      ]
+    },
+    {
+      "name": "Insignia On Ear Analog Mono Headset",
+      "price": 500,
+      "category": "Microphones",
+      "images": [
+        "./images/Insignia On Ear Analog Mono Headset.jpg"
+      ]
+    },
+    {
+      "name": "Gas Spring Wall Mount",
+      "price": 500,
+      "category": "Wall Mounts",
+      "images": [
+        "./images/Gas Spring wall mount.jpg"
+      ]
+    },
+    {
+      "name": "Adjustable Desk Mount",
+      "price": 500,
+      "category": "Wall Mounts",
+      "images": [
+        "./images/Adjustable Desk Mount.jpg"
+      ]
+    },
+    {
+      "name": "Triple Monitor Wall Mount",
+      "price": 500,
+      "category": "Wall Mounts",
+      "images": [
+        "./images/Triple monitor wall mount.jpg"
+      ]
+    },
+    {
+      "name": "Quad Monitor Wall Mount",
+      "price": 500,
+      "category": "Wall Mounts",
+      "images": [
+        "./images/Quad monitor wall mount.jpg"
+      ]
+    },
+    {
+      "name": "Bose QuetComfort Bluetooth Headphones",
+      "price": 500,
+      "category": "Headphones",
+      "images": [
+        "./images/Bose QuietComfort Bluetooth.jpg"
+      ]
+    },
+    {
+      "name": "Sony WH1000XM4 Wireless Headphones",
+      "price": 500,
+      "category": "Headphones",
+      "images": [
+        "./images/Sony WH-1000XM4 Wireless Noise Canceling.png"
+      ]
+    },
+    {
+      "name": "JBL 710 Bluetooth Headphones",
+      "price": 500,
+      "category": "Headphones",
+      "images": [
+        "./images/JBL Tune 710BT Bluetooth.jpg"
       ]
     }
   ]

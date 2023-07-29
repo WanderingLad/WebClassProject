@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="cart.js" defer></script>
+</head>
+
+<header class="header">
+    <a href="index.html">
+        <img src="images/logo.png" class="logo" alt="Royal Tech Logo" />
+    </a>
+
+    <!-- <div class="header-menu">
+        <div class="hamburger-menu">&#9776;</div>
+        <span>Menu</span>
+
+        <div class="menu-container">
+            <a href="#">Wallmounts</a>
+            <a href="#">Microphones</a>
+            <a href="#">Software</a>
+            <a href="#">Deskmats</a>
+            <a href="#">Keyboards</a>
+            <a href="#">PC Cases</a>
+            <a href="#">Cables</a>
+        </div>
+    </div> -->
+
+    <nav>
+        <ol class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li?>
+        </ol>
+    </nav>
+    <a href="cart.html" class="cta"><button>Cart</button></a>
+</header>
+
+<body onload="loadCart()">
+  <div class="container">
+    <table class="w-100" id="cartTable">
+      <tr>
+        <th class="col-3">Product</th>
+        <th class="col-3">Quantity</th>
+        <th class="col-3">Price</th>
+        <th class="col-3">Cost</th>
+      </tr>
+    </table>
+    <p id="totalCost">Total Cost: </p>
+    <button id="checkout">Checkout</button>
+  </div>
+</body>
+
+<!--Footer Section-->
+<footer>
+    <div class="left-content">
+        <h3>Contact and Locations</h3>
+        <p>
+            Reach us on
+            <a href="" target="_blank">Twitter</a> or at
+            <a href="mailto:RoyalTech@Gmail.com" target="_blank">RoyalTech@gmail.com</a>
+            <br>
+            <br>
+            N B St, Sacramento, CA 95811 <br>
+            3393 Peachtree Rd NE, Atlanta, GA 30326 <br>
+            1250 Old Country Rd, Westbury, NY 11590
+        </p>
+    </div>
+    <div class="right-content">
+        <p>&copy; 2023 Royal Tech. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+</footer>
+
+</html>
