@@ -1,328 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="productList.js" defer></script>
+  <!-- <script src="menu.js" defer></script> -->
+</head>
+
 <header class="header">
-    <a href="index.html">
-        <img src="images/logo.png" class="logo" alt="Royal Tech Logo" />
-    </a>
+  <a href="index.html">
+    <img src="images/logo.png" class="logo" alt="Royal Tech Logo" />
+  </a>
 
-    <div class="header-menu">
-      <div class="hamburger-menu">&#9776;</div>
-      <span>Menu</span>
+  <!-- <div class="header-menu">
+    <div class="hamburger-menu">&#9776;</div>
+    <span>Menu</span>
 
-      <div class="menu-container">
-          <a href="#">Wallmounts</a>
-          <a href="#">Microphones</a>
-          <a href="#">Software</a>
-          <a href="#">Deskmats</a>
-          <a href="#">Keyboards</a>
-          <a href="#">PC Cases</a>
-          <a href="#">Cables</a>
-      </div>
-  </div>
+    <div class="menu-container">
+      <a href="#">Wallmounts</a>
+      <a href="#">Microphones</a>
+      <a href="#">Software</a>
+      <a href="#">Deskmats</a>
+      <a href="#">Keyboards</a>
+      <a href="#">PC Cases</a>
+      <a href="#">Cables</a>
+    </div>
+  </div> -->
 
-    <nav>
-      <ol class="nav_links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Products</a></li>
-          <li><a href="about.html">About</a></li?>
-      </ol>
-    </nav>
-    <a href="#" class="cta"><button>Cart</button></a>
+  <nav>
+    <ol class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="about.html">About</a></li?>
+    </ol>
+  </nav>
+  <a href="cart.html" class="cta"><button>Cart</button></a>
 </header>
 
-  <body onload="loadProduct()">
-    <div id="product" data-name=""></div>
-    
+<body>
+  <div class="grid-container" id="paginated-list"></div>
+  <nav class="pagination-container">
+    <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+      &lt;
+    </button>
 
-    <div class="mouse">
-      <h3>Computer Mouse</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Razer Basalisk</p>
-          </th>
-          <th>
-            <p>Microsoft Arch</p>
-          </th>
-          <th>
-            <p>Logitech Mx</p>
-          </th> 
-        </tr>
-        <tr>
-        <th>
-          <img src="images/RBas1.jpg" alt="Razer Basalisk" class="pics_style">
+    <div id="pagination-numbers">
 
-          <p class="price_style">price
-          </p>
-          <p>
-            <button type ="button" class="product_buttons">
-              <strong>Add</strong>
-            </button>
-          </p>
-
-        </th>
-        <th>
-          <img src="images/MArch1.jpg" alt="Microsoft Arch" class="pics_style">
-        </th>
-        <th>
-          <img src="images/LMXMaster31.jpg" alt="Logitech MX" class="pics_style">
-        </th>
-        </tr>
-      </table>
-    </div>
-    
-    <div class="keyboards">
-      <h3>Keyboards</h3>
-      <table class="table_style"><!--make sure new table's have the class="table_style" tag-->
-        <tr>
-          <th>
-            <p>Manhatten Keyboard</p>
-          </th>
-          <th>
-            <p>Microsoft Ergonomic Keyboard</p>
-          </th>
-          <th>
-            <p>Razer Huntress Keyboard</p>
-          </th> 
-        </tr>
-        <tr>
-          <th>
-            <img src="images/MANKEY1.jpg" alt="Manhatten Keyboard" class="pics_style">
-          </th>
-          <th>
-            <img src="images/MErgKey1.jpg" alt="Microsoft Ergonomic Keyboard" class="pics_style">
-          </th>
-          <th>
-            <img src="images/RHUNTKEY1.jpg" alt="Razer Huntress Keyboard" class="pics_style">
-          </th>
-        </tr>
-      </table>
     </div>
 
-    <div class="cases">
-      <h3>Cases</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Fractal Design North</p>
-          </th>
-          <th>
-            <p>Liam-Le O11</p>
-          </th>
-          <th>
-            <p>Phanteks Eclipse G500A</p>
-          </th> 
-        </tr>
-        <tr>
-          <th>
-            <img src="images/FDN1.jpg" alt="Fractal Design North" class="pics_style">
-          </th>
-          <th>
-            <img src="images/LLO1.jpg" alt="Liam-Le O11" class="pics_style">
-        </th>
-          <th>
-            <img src="images/PEG500A1.jpg" alt="Phanteks Eclipse G500A" class="pics_style">
-          </th>
-        </tr>
-      </table>
-    </div>
+    <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+      &gt;
+    </button>
+  </nav>
+</body>
 
-    <div class="cable">
-      <h3>Cables</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Black Lighting Cables</p>
-          </th>
-          <th>
-            <p>Black PC Cables</p>
-          </th>
-          <th>
-            <p>Black Blue Grey PC Cables</p>
-          </th> 
-        </tr>
-        <tr>
-          <th>
-            <img src="images/Black_Lightning_cable.jpg" alt="Black Lighting Cables" class="pics_style">
-          </th>
-          <th>
-            <img src="images/Black_Pc_cables.jpg" alt="Black PC Cables" class="pics_style">
-          </th>
-          <th>
-            <img src="images/Blackbluegrey_Cables.jpg" alt="Black Blue Grey PC cables" class="pics_style">
-          </th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="mats">
-      <h3>Desk Mats</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Wave Desk mat</p>
-          </th>
-          <th>
-            <p>RGB Desk Mat</p>
-          </th>
-        </tr>
-        <tr>
-        <th>
-          <img src="images/Desk_mat_wave_blue.jpg" alt="Wave Desk Mat" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Desk_Mat_blue_rgb.jpg" alt="RGB Desk Mat" class="pics_style">
-
-        </th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="software">
-      <h3>Software</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Windows 10 Home</p>
-          </th>
-          <th>
-            <p>Windows 10 Pro</p>
-          </th>
-          <th>
-            <p>Microsoft Office 2021 Pro</p>
-          </th>
-          <th>
-            <p>Norton Antivirus Plus</p>
-          </th>
-          <th>
-            <p>FL Studio Producer Edition</p>
-          </th>
-        </tr>
-        <tr>
-        <th>
-          <img src="images/Windows 10 Home.png" alt="Windows 10 Home" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Windows 10 Pro.png" alt="Windows 10 Pro" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Microsoft Office 2021 Professional Plus.jpg" alt="Microsoft Office 2021 Pro" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Norton AntiVirus Plus.jpg" alt="Norton Antivirus Plus" class="pics_style">
-        </th>
-        <th>
-          <img src="images/FL Studio Producer Edition.png" alt="FL Studio Producer Edition" class="pics_style">
-        </th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="Microphones">
-      <h3>Microphones</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Hyper X QuadCast USB Mic</p>
-          </th>
-          <th>
-            <p>Razer Seiren Mini Microphone</p>
-          </th>
-          <th>
-            <p>Warm Audio WA8000 Large Condenser Microphone</p>
-          </th>
-          <th>
-            <p>Insignia On Ear Analog Mono Headset</p>
-          </th>
-        </tr>
-        <tr>
-        <th>
-          <img src="images/Hyper X QuadCast USB Mic.jpg" alt="Hyper X QuadCast USB Microphone" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Razer Seiren mini Microphone.png" alt="Razer Seiren Mini Microphone" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Warm Audio WA-8000 Large Condenser Mic.jpg" alt="Warm Audio WA8000 Large Condenser Microphone" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Insignia On Ear Analog Mono Headset.jpg" alt="Insignia On Ear Analog Mono Headset" class="pics_style">
-        </th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="Wall Mounts">
-      <h3>Wall Mounts</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Gas Spring Wall Mount</p>
-          </th>
-          <th>
-            <p>Adjustable Desk Mount</p>
-          </th>
-          <th>
-            <p>Triple Monitor Wall Mount</p>
-          </th>
-          <th>
-            <p>Quad Monitor Wall Mount</p>
-          </th>
-        </tr>
-        <tr>
-        <th>
-          <img src="images/Gas Spring wall mount.jpg" alt="Gas Spring Wall Mount" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Adjustable Desk Mount.jpg" alt="Adjustable Desk Mount" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Triple monitor wall mount.jpg" alt="Triple Monitor Wall Mount" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Quad monitor wall mount.jpg" alt="Quad Monitor Wall Mount" class="pics_style">
-        </th>
-        </tr>
-      </table>
-    </div>
-
-    <div class="Headphones">
-      <h3>Headphones</h3>
-      <table class="table_style">
-        <tr>
-          <th>
-            <p>Bose QuetComfort Bluetooth Headphones</p>
-          </th>
-          <th>
-            <p>Sony WH1000XM4 Wireless Headphones</p>
-          </th>
-          <th>
-            <p>JBL 710 Bluetooth Headphones</p>
-          </th>
-        </tr>
-        <tr>
-        <th>
-          <img src="images/Bose QuietComfort Bluetooth.jpg" alt="Bose Quiet Comfort Bluetooth Headphones" class="pics_style">
-        </th>
-        <th>
-          <img src="images/Sony WH-1000XM4 Wireless Noise Canceling.png" alt="Sony WH1000XM4 Wireless Headphones" class="pics_style">
-        </th>
-        <th>
-          <img src="images/JBL Tune 710BT Bluetooth.jpg" alt="JBL 710 Bluetooth Headphones" class="pics_style">
-        </th>
-        </tr>
-      </table>
-    </div>
-    
-
-  </body>
-  <script src="product.js"></script>
+<!--Footer Section-->
+<footer>
+  <div class="left-content">
+    <h3>Contact and Locations</h3>
+    <p>
+      Reach us on
+      <a href="" target="_blank">Twitter</a> or at
+      <a href="mailto:RoyalTech@Gmail.com" target="_blank">RoyalTech@gmail.com</a>
+      <br>
+      <br>
+      N B St, Sacramento, CA 95811 <br>
+      3393 Peachtree Rd NE, Atlanta, GA 30326 <br>
+      1250 Old Country Rd, Westbury, NY 11590
+    </p>
+  </div>
+  <div class="right-content">
+    <p>&copy; 2023 Royal Tech. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </div>
+</footer>
 
 </html>
