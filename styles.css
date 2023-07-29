@@ -12,15 +12,15 @@ button {
   font-family: "Space Mono", monospace;
   font-weight: 500;
   font-size: 16px;
-  color: #545454;
-  text-decoration: none;
+  color: #545454 !important;
+  text-decoration: none !important;
 }
 
 button {
   padding: 9px 25px;
   background-color: #5454545e;
   border: none;
-  border-radius: 50px;
+  border-radius: 50px !important;
   cursor: pointer;
   transition: all 0.3s ease-in 0s;
 }
